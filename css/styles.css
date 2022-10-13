@@ -28,6 +28,7 @@
     --work-list: #EEEEEE;
     --line-header: #ECECEC;
     --overlay-color: rgba(47, 48, 58, 0.4);
+    --border-client: #AFB1B8;
 }
 
 html {
@@ -58,7 +59,7 @@ ul, ol {
     margin: 0;
     padding-left: 0;
 }
-img {
+svg {
     display:block;
     max-width: 100%;
 }
@@ -299,7 +300,18 @@ img {
     color: var(--secondary-color-text);
     max-width: 270px;
 }
-
+.bg-perevagy {
+    display: flex;
+    background-color: var(--secondary-color-bg);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.icon-perevagy {
+    height: 70px;
+    margin: auto 0;
+}
 
 .title-name {
     font-style: normal;
@@ -349,6 +361,24 @@ img {
 .perevagy, .working, .comand {
     display: flex;
     gap: 30px;
+}
+.clients {
+    display: flex;
+    gap: 30px;
+}
+.border-client {
+    display: flex;
+    border: 1px solid var(--border-client);
+    border-radius: 4px;
+    height: 92px;
+    min-width: 170px;
+}
+.logo-client {
+    margin: auto auto;
+}
+.border-client:hover,
+.border-client:focus {
+    fill: var(--primary-color-text);
 }
 
 /* ----------!!!стилі головної Портфоліо!!!---------- */
