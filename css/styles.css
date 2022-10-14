@@ -29,6 +29,7 @@
     --line-header: #ECECEC;
     --overlay-color: rgba(47, 48, 58, 0.4);
     --border-client: #AFB1B8;
+    --footer-socsolid-main: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -59,10 +60,7 @@ ul, ol {
     margin: 0;
     padding-left: 0;
 }
-svg {
-    display:block;
-    max-width: 100%;
-}
+
 
 .hero-button,
 .all-button .fr-button {
@@ -131,15 +129,25 @@ svg {
     color: var(--primary-color-text);
 }
 
+
 .mail .link,
 .tel .link {
+    display: flex;
     color: var(--secondary-color-text);
+    fill: var(--secondary-color-text);
+}
+.logo-mail {
+    --logo-mail-color: currentColor;
+    margin: auto 0;
+    margin-right: 10px;
+    align-items: flex-end;
 }
 .mail .link:hover,
 .tel .link:hover,
 .mail .link:focus,
 .tel .link:focus {
     color: var(--primary-color-text);
+    fill: var(--primary-color-text);
 }
 
 
@@ -211,6 +219,44 @@ svg {
 }
 .f-kontakty .kontakt:not(:last-child) {
     margin-bottom: 9px;
+}
+.footer-pos {
+    display: flex;
+    gap: 94px;
+}
+/* .footer-block-1, 
+.footer-block-2 {
+    outline: 1px solid red;
+}*/
+.footer-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footer-color-text);
+    margin-bottom: 20px;
+    padding-top: 12px;
+}
+
+.list-soc {
+    display: flex;
+    gap: 10px;
+}
+.solid-round {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: var(--footer-socsolid-main);
+    fill: var(--footer-color-text);
+    border-radius: 50%;
+}
+.solid-round:hover,
+.solid-round:focus {
+    background-color: var(--primary-color-text);
+}
+.logo-soc {
+    margin: auto;
 }
 
 /* ----------!!!стилі головної Студія!!!---------- */
@@ -309,7 +355,6 @@ svg {
     margin-bottom: 30px;
 }
 .icon-perevagy {
-    height: 70px;
     margin: auto 0;
 }
 
@@ -329,6 +374,7 @@ svg {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
+    margin-bottom: 16px;
 }
 .card-solid {
     background-color: var(--main-color-bg);
@@ -338,6 +384,28 @@ svg {
 .comand-content {
     padding: 30px 0;
 }
+.list-soc-comand {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.solid-round-comand {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: var(--footer-socsolid-main);
+    border-radius: 50%;
+    fill: var(--border-client);
+}
+.logo-soc-comand {
+    margin: auto;
+    --logo-soc-comand-color: currentColor;
+}
+.solid-round-comand:hover,
+.solid-round-comand:focus {
+    background-color: var(--primary-color-text);
+    fill: var(--footer-color-text);
+}    
 
 .bg-violet {
     background-color: var(--secondary-color-bg);
@@ -372,14 +440,18 @@ svg {
     border-radius: 4px;
     height: 92px;
     min-width: 170px;
+    fill: var(--border-client);
 }
 .logo-client {
     margin: auto auto;
+    --logo-client-color: currentColor;
 }
 .border-client:hover,
 .border-client:focus {
+    border: 1px solid var(--primary-color-text);
     fill: var(--primary-color-text);
 }
+
 
 /* ----------!!!стилі головної Портфоліо!!!---------- */
 
@@ -451,6 +523,10 @@ svg {
 }
 .border-card:nth-child(3n) {
     margin-right: 0;
+}
+.border-card:hover,
+.border-card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-bg {
