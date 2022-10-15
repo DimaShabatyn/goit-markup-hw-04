@@ -81,11 +81,6 @@ img {
 
 
 /* !!!стилі Шапки!!! */
-.container.shapka {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -143,9 +138,7 @@ img {
 }
 .logo-mail {
     color: currentColor;
-    margin: auto 0;
     margin-right: 10px;
-    align-items: flex-end;
 }
 .mail .link:hover,
 .tel .link:hover,
@@ -155,30 +148,37 @@ img {
     fill: var(--primary-color-text);
 }
 
-
-.menu {
+.container.shapka {
     display: flex;
     align-items: center;
-}
-.kontakty {
-    display: flex;
-}
-.kntkt-dist:first-child {
-    margin-right: 50px;
+    justify-content: space-between;
 }
 
 .navigation {
     display: flex;
     align-items: center;
 }
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.kontakty {
+    display: flex;
+    gap: 30px;
+}
+.kntkt-dist .link {
+    display: flex;
+    align-items: center;
+}
+
 .header {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--line-header);
 }
-.menu-dist:not(:last-child) {
-    margin-right: 50px;
-}
+
 
 
 
