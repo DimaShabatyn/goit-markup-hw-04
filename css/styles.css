@@ -230,10 +230,7 @@ img {
     gap: 94px;
     align-items: baseline;
 }
-/* .footer-block-1, 
-.footer-block-2 {
-    outline: 1px solid red;
-}*/
+
 .footer-link {
     font-weight: 700;
     font-size: 14px;
@@ -255,13 +252,12 @@ img {
     background-color: var(--footer-socsolid-main);
     fill: var(--footer-color-text);
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 }
 .solid-round:hover,
 .solid-round:focus {
     background-color: var(--primary-color-text);
-}
-.logo-soc {
-    margin: auto;
 }
 
 
@@ -278,6 +274,7 @@ img {
     linear-gradient(to right, var(--overlay-color), var(--overlay-color)),
     url(../images/hero.jpg);
     background-color: var(--hero-bg);
+    background-size: cover;
 }
 .hero-title {
     font-style: normal;
@@ -428,7 +425,6 @@ img {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid transparent;
 }
 
 .perevagy, .working, .comand {
@@ -467,7 +463,6 @@ img {
 .app .fr-button,
 .design .fr-button,
 .marketing .fr-button {
-    display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -530,9 +525,11 @@ img {
 .border-card:nth-child(3n) {
     margin-right: 0;
 }
+.border-shadow > .link {
+    display: block;
+}
 .border-shadow > .link:hover,
 .border-shadow > .link:focus {
-    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
